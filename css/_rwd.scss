@@ -1,0 +1,92 @@
+//rwd
+@mixin desk-1440 {
+        @media screen and (max-width:1440px) {
+                @content;
+        }
+}
+
+@mixin desk-1400 {
+        @media screen and (max-width:1400px) {
+                @content;
+        }
+}
+
+@mixin laptop-l-1300 {
+        @media screen and (max-width:1300px) {
+                @content;
+        }
+}
+
+@mixin laptop-s-1200 {
+        @media screen and (max-width:1200px) {
+                @content;
+        }
+}
+
+
+@mixin pad-m-1080 {
+        @media screen and (max-width:1080px) {
+                @content;
+        }
+}
+
+@mixin pad-ms-992{
+        @media screen and (max-width:992px) {
+                @content;
+        }      
+}
+
+@mixin pad-s-900 {
+        @media (max-width:900px) {
+                @content;
+        }
+}
+
+@mixin pad-s-800 {
+        @media screen and (max-width:800px) {
+                @content;
+        }
+}
+
+@mixin pad-xs-767 {
+        @media screen and (max-width: 767px) {
+                @content;
+        }
+}
+
+@mixin phone-xl-600 {
+        @media screen and (max-width: 600px) {
+                @content;
+        }
+}
+
+@mixin phone-l-500 {
+        @media screen and (max-width: 500px) {
+                @content;
+        }
+}
+
+@mixin phone-m-440 {
+        @media screen and (max-width: 440px) {
+                @content;
+        }
+}
+
+@mixin phone-m-390 {
+        @media screen and (max-width: 390px) {
+                @content;
+        }
+}
+
+
+@mixin phone-s-365 {
+        @media screen and (max-width: 365px) {
+                @content;
+        }
+}
+
+@mixin phone-s-325 {
+        @media screen and (max-width: 325px) {
+                @content;
+        }
+}

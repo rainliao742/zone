@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Noto+Sans+TC:wght@100;500;700&family=Roboto:wght@100;400;700&display=swap');
+@import '_rwd.scss';
+@import '_color.scss';
+
+@mixin transCenter($x, $y) {
+        transform: translate($x, $y);
+}
+
+@mixin hover {
+        cursor: pointer;
+
+        &:hover {
+                @include transCenter(-1px, -1px);
+        }
+}
+
+@mixin topWrap($t) {
+        .top_wrap {
+                background-color: #fff;
+                width: 100%;
+                position: absolute;
+                top: $t;
+                left: 50%;
+                @include transCenter(-50%, 0);
+
+                @include pad-xs-767 {
+                        position: relative;
+                        top: 0;
+                }
+        }
+}
+
+$zoneBlue:#0001E5;
+$zoneDarkB:rgb(5, 12, 116);
+$zoneGaryBlue:#AEBDDE;
+$zoneGray:#949799;
+$zoneLightG:#E5E5E5;
+$zoneDarkG:#333;
+$zoneRed:#FF0000;
+
+
+
+.registered-body {
+        position: relative;
+        min-height: auto;
+	background: $zoneLightG;
+	.container-fluid.register-wrap{
+		padding:0;
+		margin:120px 0 0 0;
+		@include pad-xs-767{
+			margin:0;
+		}
+	}
+        .ct_wrap {
+                position: relative;
+                width: 100%;
+		padding:0;
+                @include pad-xs-767 {
+                        border-top: 2px solid $zoneBlue;
+                        padding: 0 0 0 0;
+                }
+		.close-row{
+			width: 100%;
+			display: flex;
+			box-sizing: border-box;
+			padding: 2rem 0 0 0;
+			@include pad-s-800 {
+				padding:1rem 0 1rem 0;
+				background:$zoneBlue;
+				margin:0;
+			}
+			.closeBtn{
+				width: 24px;
+				height: 24px;
+				background: url(../images/close_btn.svg) no-repeat center center;
+				background-size: contain;
+				cursor:pointer;
+				margin:0 auto;
+				&:hover{
+					transform:rotate(90deg);
+				}
+				@include pad-s-800 {
+				background: url(../images/close_white_btn.svg) no-repeat center center;
+				background-size: contain;					
+				}
+			}
+		}
+		.container {
+			//-*{ border: 1px solid #000; }
+			width: 100%;
+			max-width: 1300px;
+			padding: 2rem;
+			display: flex;
+			height: auto;
+			cursor: default;
+			border-radius: 0;
+			flex-wrap: wrap;
+
+			&:hover {
+				background: transparent;
+			}
+
+			@include pad-s-900 {
+				height: auto;
+				margin: 0;
+			}
+			@include pad-s-800 {
+				padding: 2rem;
+			}
+
+			@include phone-xl-600 {
+				padding: 0rem;
+			}
+			.register-row{
+				width: 100%;
+				display: flex;
+				margin-bottom:2rem;
+				box-sizing: border-box;
+				flex-wrap:wrap;
+				position: relative;
+				p.termText{
+					width: 60%;
+					margin:0 auto;
+					text-align: center;
+					font-size: 16px;
+					line-height: 1.6em;
+					@include phone-xl-600{
+						width: 90%;
+					}
+				}			
+			}
+			.basic-wrap, .shipping-wrap{
+				width: 80%;
+				margin:0 auto;
+				.input{
+					position: relative;
+					width: 100%;
+					display: flex;
+					@include phone-xl-600{
+						flex-wrap:wrap;
+					}
+					.labelInput{
+						display: flex;
+						width: 100%;
+						position: relative;
+						align-items: center;
+						padding:1rem 0.5rem 1rem 0;
+						border-bottom:2px solid $zoneGray;
+						border-top:1px solid $zoneLightG;
+						border-right:1px solid $zoneLightG;
+						border-left:1px solid $zoneLightG;
+						margin:0 1rem 2rem 0;
+							&:hover, &:active, &:focus{
+								border-bottom: 2px solid $zoneBlue;
+								color:$zoneBlue;
+							}											
+						label{
+							display:inline-block;
+							font-size: 18px;
+							white-space: nowrap;
+							color:$zoneGray;
+							&.hint{
+								color:$zoneRed;
+							}
+						}
+						input{
+							width: 100%;
+							color:$zoneGray;
+							font-size: 18px;
+							background:$zoneLightG;
+							outline:none;
+							text-indent: 1em;
+							&:hover, &:active, &:focus{
+								color:$zoneBlue;
+							}
+						}
+						span.hint{
+							font-size: 14px;
+							position: absolute;
+							top: 0;
+							left: 0;
+							color:$zoneRed;
+						}
+					}
+					label.outside{
+						display: none;
+					}
+					input.outside{
+						width: 100%;
+						color:$zoneBlue;
+						font-size: 18px;
+						background:$zoneLightG;
+						outline:none;
+						text-indent: 0em;
+						padding:1rem 0.5rem 1rem 0;
+						border-bottom:2px solid $zoneGray;
+						border-top:1px solid $zoneLightG;
+						border-right:1px solid $zoneLightG;
+						border-left:1px solid $zoneLightG;
+						margin:0 0 2rem 0;						
+						&:hover, &:active, &:focus{
+							color:$zoneBlue;
+							border-bottom: 2px solid $zoneBlue;
+						}
+					}
+					.radio-wrap{
+						width: 100%;
+						display: flex;
+						box-sizing: border-box;
+						//padding:1rem 0.5rem 1rem 0;
+						justify-content: flex-start;
+						border-bottom: 2px solid $zoneGray;
+						margin: 0 1rem 2rem 0;
+						&:hover, &:active, &:focus{
+							color:$zoneBlue;
+							border-bottom: 2px solid $zoneBlue;
+							.radioGroup{
+								label{
+									span{
+									color:$zoneBlue;
+									}
+								}
+							}
+						}
+												
+						@include phone-xl-600{
+							padding:1rem 0 1rem 0;
+							margin:0 1rem 1rem 0;
+						}						
+						position: relative;					
+						.radioGroup{
+							width: auto;
+							display: flex;
+							align-items: center;
+							box-sizing: border-box;
+							span{
+								cursor: default;
+								color:$zoneGray;
+								font-size: 18px;
+								&.act{
+									color:$zoneDarkG;
+								}
+							}
+
+							label{
+								display: block;
+								font-size: 18px;
+								cursor: pointer;
+								position: relative;
+								padding: 0 1em 0 1em; 
+								width: 100%;
+								height: 18px;
+								display: flex;
+								align-items: center;
+								justify-content: start;
+							}
+							input{
+								visibility: hidden;
+								position: absolute;
+								font-size: 18px;
+								top: 0;
+								right: 0;
+								height: auto;
+								margin:0;
+							}
+							.radio-button {
+							/* 自定義樣式的span */
+							height: auto;
+							width: auto;
+							display: block;
+							position:relative;
+							text-align: center;
+							left:0%;
+							top: 0;
+							cursor: pointer;
+								&:hover{
+									&::after{
+										color:$zoneBlue;
+									}
+									
+								}							
+							}
+							.radio-button::after {
+							content: "";
+							display: block;
+							height: 2px;
+							width: 100%;
+							position: absolute;
+							bottom: 0%;
+							left: 50%;
+							transform: translate(-50%,0%);
+							opacity: 0;
+							border-bottom: 2px solid $zoneBlue;
+							color:$zoneGray;
+
+							}
+							.radioGender:checked ~ label .radio-button{
+							opacity: 1;
+							color:$zoneBlue;
+							}																	
+						}						
+					}
+
+				}					
+				
+			}
+			.payment-wrap{
+				position: relative;
+				display: flex;
+				flex-wrap:wrap;
+				width: 86%;
+				margin:0 auto 2rem auto;
+				.input{
+					position: relative;
+					width: 100%;
+					display: flex;
+					&.w50{
+						width: 50%;
+						display: flex;
+						flex-wrap:wrap;
+						@include pad-s-800{
+							flex-wrap:wrap;
+						}						
+						@include pad-s-800{
+							width: 100%;
+						}		
+					}
+					.buttons, .agreement, .bankInfo, .checkRobot{
+						width: 100%;
+						margin:0 0 2rem 0;
+						display: flex;
+						flex-wrap:wrap;
+						padding:1rem;
+						@include phone-xl-600{
+							padding:0;
+							width: 100%;
+						}
+					}
+					.agreement{
+						align-items: center;
+						position: relative;
+						label{
+							display: block;
+							width: 26px;
+							height: 24px;
+							margin:0 0.5rem 0 0;
+						}
+						a{
+							text-decoration: none;
+							margin:0 0.2rem;
+							color:$zoneBlue;
+							&:hover{
+								color:$zoneDarkB;
+							}
+						}
+						p{
+							font-size: 14px;
+							margin: 0;
+							&:last-child{
+								@include phone-xl-600{
+									padding:0 0 0 2.4em;
+								}
+							}
+						}
+						input[type="checkbox"]{
+							display: none;
+						}
+						input[type="checkbox"] + label span{
+							display: inline-block;
+							width: 26px;
+							height: 24px;
+							margin:0px 10px 0 0;
+							background:url(../images/checked-box.png)  0 0 no-repeat;
+							background-size: cover;
+							cursor:pointer;
+						}
+						input[type="checkbox"]:checked + label span{
+							background:url(../images/checked-box.png) -24px 0 no-repeat;
+							background-size: cover;
+						}
+						span.hint{
+							display: block;
+							font-size: 14px;
+							position: relative;
+							color:$zoneRed;
+							width: 100%;
+						}						
+					}
+					.buttons{
+						button{
+							width: auto;
+							border: 2px solid $zoneBlue;
+							font-size: 14px;
+							min-width:100px;
+							margin:0 1rem 1rem 0;
+							&.act{
+								background-color: $zoneBlue;
+								color:#fff;
+							}
+						}
+					}
+					.bankInfo{
+						width: 80%;
+						align-items: center;
+						flex-wrap:wrap;
+						span{
+							width: 100%;
+							color:$zoneBlue;
+							font-size: 16px;
+						}
+					}
+					.checkRobot{
+						width: 80%;
+						align-items: center;
+						position: relative;
+						@include pad-s-800{
+							width: 100%;
+							margin: 0 0 0 0;							
+						}
+						@include phone-xl-600{
+							width: 100%;
+							margin: 0 0 0 0;
+						}
+						img{
+							width: 100%;
+							max-width:100%;
+							margin:1rem 0 0 0;
+						}
+						span.hint{
+							display: block;
+							font-size: 14px;
+							position: relative;
+							color:$zoneRed;
+							width: 100%;
+						}						
+					}			
+				}
+			}
+
+
+		}
+
+
+
+
+
+
+
+        }
+
+
+
+}

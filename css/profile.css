@@ -1,0 +1,463 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Noto+Sans+TC:wght@100;500;700&family=Roboto:wght@100;400;700&display=swap");
+.profile-body {
+  position: relative;
+  min-height: auto;
+  background: #E5E5E5;
+}
+.profile-body .container-fluid.profile-wrap {
+  padding: 0;
+  margin: 120px 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .profile-body .container-fluid.profile-wrap {
+    margin: 0;
+  }
+}
+.profile-body .ct_wrap {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .profile-body .ct_wrap {
+    border-top: 2px solid #0001E5;
+    padding: 0 0 0 0;
+  }
+}
+.profile-body .ct_wrap .container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 2rem;
+  display: flex;
+  height: auto;
+  cursor: default;
+  border-radius: 0;
+  flex-wrap: wrap;
+}
+.profile-body .ct_wrap .container:hover {
+  background: transparent;
+}
+@media (max-width: 900px) {
+  .profile-body .ct_wrap .container {
+    height: auto;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .profile-body .ct_wrap .container {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .profile-body .ct_wrap .container {
+    padding: 0rem;
+  }
+}
+.profile-body .ct_wrap .container .profile-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  position: relative;
+}
+.profile-body .ct_wrap .container .profile-row p.termText {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+@media screen and (max-width: 600px) {
+  .profile-body .ct_wrap .container .profile-row p.termText {
+    width: 90%;
+  }
+}
+.profile-body .ct_wrap .container .profile-row table {
+  width: 80%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 600px) {
+  .profile-body .ct_wrap .container .profile-row table {
+    width: 90%;
+    margin: 0 0 0 10%;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
+.profile-body .ct_wrap .container .profile-row table tbody {
+  width: 100%;
+}
+.profile-body .ct_wrap .container .profile-row table tr {
+  margin: 0 0 1rem 0;
+  border-bottom: 1px solid #949799;
+  width: 100%;
+}
+.profile-body .ct_wrap .container .profile-row table tr th {
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+.profile-body .ct_wrap .container .profile-row table tr th .title {
+  padding: 0.5rem;
+  color: #fff;
+  background: #0001E5;
+  border-radius: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 100px;
+  white-space: nowrap;
+  font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+  .profile-body .ct_wrap .container .profile-row table tr th .title {
+    width: auto;
+    padding: 0.5rem 1.2rem;
+  }
+}
+.profile-body .ct_wrap .container .profile-row table tr td {
+  width: 20%;
+  text-align: center;
+  padding: 1rem;
+  color: #0001E5;
+  padding-bottom: 2rem;
+}
+.profile-body .ct_wrap .container .profile-row table tr button, .profile-body .ct_wrap .container .profile-row table tr a {
+  display: block;
+  padding: 0.5rem !important;
+  min-width: 80px !important;
+  font-size: 14px;
+}
+.profile-body .ct_wrap .container .basic-wrap, .profile-body .ct_wrap .container .shipping-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+.profile-body .ct_wrap .container .basic-wrap .input, .profile-body .ct_wrap .container .shipping-wrap .input {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .profile-body .ct_wrap .container .basic-wrap .input, .profile-body .ct_wrap .container .shipping-wrap .input {
+    flex-wrap: wrap;
+  }
+}
+.profile-body .ct_wrap .container .basic-wrap .input .labelInput, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput {
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  padding: 1rem 0.5rem 1rem 0;
+  border-bottom: 2px solid #949799;
+  border-top: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+  border-left: 1px solid #E5E5E5;
+  margin: 0 1rem 2rem 0;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .labelInput:hover, .profile-body .ct_wrap .container .basic-wrap .input .labelInput:active, .profile-body .ct_wrap .container .basic-wrap .input .labelInput:focus, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput:hover, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput:active, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput:focus {
+  border-bottom: 2px solid #0001E5;
+  color: #0001E5;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .labelInput.btn, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput.btn {
+  border-bottom: 2px solid #E5E5E5;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .labelInput.btn .active, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput.btn .active {
+  margin: 0;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .labelInput.btn .cf-password, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput.btn .cf-password {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin: 1rem 0 0 0;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .labelInput label, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput label {
+  display: inline-block;
+  font-size: 18px;
+  white-space: nowrap;
+  color: #949799;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .labelInput label.hint, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput label.hint {
+  color: #FF0000;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .labelInput input, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput input {
+  width: 100%;
+  color: #949799;
+  font-size: 18px;
+  background: #E5E5E5;
+  outline: none;
+  text-indent: 1em;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .labelInput input:hover, .profile-body .ct_wrap .container .basic-wrap .input .labelInput input:active, .profile-body .ct_wrap .container .basic-wrap .input .labelInput input:focus, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput input:hover, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput input:active, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput input:focus {
+  color: #0001E5;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .labelInput span.hint, .profile-body .ct_wrap .container .shipping-wrap .input .labelInput span.hint {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FF0000;
+}
+.profile-body .ct_wrap .container .basic-wrap .input label.outside, .profile-body .ct_wrap .container .shipping-wrap .input label.outside {
+  display: none;
+}
+.profile-body .ct_wrap .container .basic-wrap .input input.outside, .profile-body .ct_wrap .container .shipping-wrap .input input.outside {
+  width: 100%;
+  color: #0001E5;
+  font-size: 18px;
+  background: #E5E5E5;
+  outline: none;
+  text-indent: 0em;
+  padding: 1rem 0.5rem 1rem 0;
+  border-bottom: 2px solid #949799;
+  border-top: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+  border-left: 1px solid #E5E5E5;
+  margin: 0 0 2rem 0;
+}
+.profile-body .ct_wrap .container .basic-wrap .input input.outside:hover, .profile-body .ct_wrap .container .basic-wrap .input input.outside:active, .profile-body .ct_wrap .container .basic-wrap .input input.outside:focus, .profile-body .ct_wrap .container .shipping-wrap .input input.outside:hover, .profile-body .ct_wrap .container .shipping-wrap .input input.outside:active, .profile-body .ct_wrap .container .shipping-wrap .input input.outside:focus {
+  color: #0001E5;
+  border-bottom: 2px solid #0001E5;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  border-bottom: 2px solid #949799;
+  margin: 0 1rem 2rem 0;
+  position: relative;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap:hover, .profile-body .ct_wrap .container .basic-wrap .input .radio-wrap:active, .profile-body .ct_wrap .container .basic-wrap .input .radio-wrap:focus, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap:hover, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap:active, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap:focus {
+  color: #0001E5;
+  border-bottom: 2px solid #0001E5;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap:hover .radioGroup label span, .profile-body .ct_wrap .container .basic-wrap .input .radio-wrap:active .radioGroup label span, .profile-body .ct_wrap .container .basic-wrap .input .radio-wrap:focus .radioGroup label span, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap:hover .radioGroup label span, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap:active .radioGroup label span, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap:focus .radioGroup label span {
+  color: #0001E5;
+}
+@media screen and (max-width: 600px) {
+  .profile-body .ct_wrap .container .basic-wrap .input .radio-wrap, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap {
+    padding: 1rem 0 1rem 0;
+    margin: 0 1rem 2rem 0;
+  }
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup {
+  width: auto;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  height: auto;
+  margin: 0;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup span, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup span {
+  cursor: default;
+  color: #949799;
+  font-size: 18px;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup span.act, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup span.act {
+  color: #333;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup label, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup label {
+  display: block;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup label .radio-button, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup label .radio-button {
+  /* 自定義樣式的span */
+  height: auto;
+  width: auto;
+  display: block;
+  position: relative;
+  text-align: center;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup label .radio-button:hover::after, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup label .radio-button:hover::after {
+  color: #0001E5;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup label .radio-button::after, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup label .radio-button::after {
+  display: block;
+  content: "";
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  border-bottom: 2px solid #0001E5;
+  color: #949799;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup input.radioGender, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup input.radioGender {
+  visibility: hidden;
+  position: absolute;
+  font-size: 18px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin: 0;
+}
+.profile-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup .radioGender:checked ~ label .radio-button, .profile-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup .radioGender:checked ~ label .radio-button {
+  opacity: 1;
+  color: #0001E5;
+}
+.profile-body .ct_wrap .container .payment-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 86%;
+  margin: 0 auto 2rem auto;
+}
+.profile-body .ct_wrap .container .payment-wrap .input {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.profile-body .ct_wrap .container .payment-wrap .input.w50 {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 800px) {
+  .profile-body .ct_wrap .container .payment-wrap .input.w50 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .profile-body .ct_wrap .container .payment-wrap .input.w50 {
+    width: 100%;
+  }
+}
+.profile-body .ct_wrap .container .payment-wrap .input .buttons, .profile-body .ct_wrap .container .payment-wrap .input .agreement, .profile-body .ct_wrap .container .payment-wrap .input .bankInfo, .profile-body .ct_wrap .container .payment-wrap .input .checkRobot {
+  width: 100%;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .profile-body .ct_wrap .container .payment-wrap .input .buttons, .profile-body .ct_wrap .container .payment-wrap .input .agreement, .profile-body .ct_wrap .container .payment-wrap .input .bankInfo, .profile-body .ct_wrap .container .payment-wrap .input .checkRobot {
+    padding: 0;
+    width: 100%;
+  }
+}
+.profile-body .ct_wrap .container .payment-wrap .input .agreement {
+  align-items: center;
+  position: relative;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .agreement label {
+  display: block;
+  width: 26px;
+  height: 24px;
+  margin: 0 0.5rem 0 0;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .agreement a {
+  text-decoration: none;
+  margin: 0 0.2rem;
+  color: #0001E5;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .agreement a:hover {
+  color: #050c74;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .agreement p {
+  font-size: 14px;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .profile-body .ct_wrap .container .payment-wrap .input .agreement p:last-child {
+    padding: 0 0 0 2.4em;
+  }
+}
+.profile-body .ct_wrap .container .payment-wrap .input .agreement input[type=checkbox] {
+  display: none;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .agreement input[type=checkbox] + label span {
+  display: inline-block;
+  width: 26px;
+  height: 24px;
+  margin: 0px 10px 0 0;
+  background: url(../images/checked-box.png) 0 0 no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .agreement input[type=checkbox]:checked + label span {
+  background: url(../images/checked-box.png) -24px 0 no-repeat;
+  background-size: cover;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .agreement span.hint {
+  display: block;
+  font-size: 14px;
+  position: relative;
+  color: #FF0000;
+  width: 100%;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .buttons button, .profile-body .ct_wrap .container .payment-wrap .input .buttons a {
+  display: block;
+  width: auto;
+  border: 2px solid #0001E5;
+  font-size: 14px;
+  min-width: 100px;
+  margin: 0 1rem 1rem 0;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .buttons button.act, .profile-body .ct_wrap .container .payment-wrap .input .buttons a.act {
+  background-color: #0001E5;
+  color: #fff;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .bankInfo {
+  width: 80%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .bankInfo span {
+  width: 100%;
+  color: #0001E5;
+  font-size: 16px;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .checkRobot {
+  width: 80%;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  .profile-body .ct_wrap .container .payment-wrap .input .checkRobot {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .profile-body .ct_wrap .container .payment-wrap .input .checkRobot {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+}
+.profile-body .ct_wrap .container .payment-wrap .input .checkRobot img {
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem 0 0 0;
+}
+.profile-body .ct_wrap .container .payment-wrap .input .checkRobot span.hint {
+  display: block;
+  font-size: 14px;
+  position: relative;
+  color: #FF0000;
+  width: 100%;
+}
+
+/*# sourceMappingURL=profile.css.map */

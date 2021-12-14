@@ -1,0 +1,832 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Noto+Sans+TC:wght@100;500;700&family=Roboto:wght@100;400;700&display=swap');
+@import '_rwd.scss';
+@import '_color.scss';
+
+@mixin transCenter($x,$y) {
+	transform: translate($x,$y);
+}
+@mixin hover{
+	cursor:pointer;
+	&:hover{
+		@include transCenter(-1px,-1px);
+		}
+}
+@mixin topWrap($t){
+	.top_wrap{
+		background-color: #fff;
+		width: 100%;
+		position: absolute;
+		top:$t;
+		left: 50%;
+		@include transCenter(-50%,0);
+		@include pad-xs-767{
+			position: relative;
+			top: 0;
+		}
+	}	
+}
+
+
+
+.product-body.list{
+	position: relative;
+	min-height:auto;
+	.list-wrap{
+		width: 100%;
+		position: relative;
+		top: 100px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		left:50%;
+		padding:0;
+		@include transCenter(-50%,0);
+		@include pad-xs-767{
+			position: relative;
+			top: 0;				
+		}
+		.bread{
+			display: block;
+			width: 90%;
+			margin:0 auto;
+			padding: 1rem;
+			max-width:1400px;
+			@include pad-xs-767{
+				display: none;
+			}									
+			a{
+				color: $zoneBlue;
+				text-decoration: none;
+				word-spacing:2px;
+				&:hover{
+					color:$zoneDarkB;
+				}
+			}
+		}
+		.scroll{
+			display: flex;
+			position: relative;
+			width:100%;
+			overflow-x: visible;
+			justify-content: center;
+			@include pad-xs-767{
+				width: 100%;
+			}
+		}
+		ul.tabsList{
+			width: auto;
+			margin: 0 auto;	
+			max-width:1100px;					
+			display: flex;
+			padding:1rem;
+			list-style: none;
+			align-items: center;
+			justify-content:space-evenly;
+			box-sizing: border-box;
+			@include pad-m-1080{
+				flex-wrap:wrap;
+				margin: 0 0 1rem 0;
+				justify-content:flex-start;
+				overflow: auto;
+				white-space:nowrap;
+				flex-wrap:nowrap;
+
+			}
+			@include pad-xs-767{
+				margin: 0;
+				justify-content:flex-start;
+				overflow: auto;
+				white-space:nowrap;
+				flex-wrap:nowrap;
+				
+			}
+			@include phone-xl-600{
+				margin: 0;
+				justify-content:flex-start;
+				overflow: auto;
+				white-space:nowrap;
+				flex-wrap:nowrap;
+			}						
+			li{
+				padding:0.1rem 1rem;
+				margin: 0 0.5rem;
+				background:transparent;
+				border-radius: 40px;
+				cursor:pointer;
+				text-align: center;
+				&:hover{
+					background:$zoneBlue;
+					a{
+						color:#fff;
+					}
+									
+				}
+				&.active{
+					background:$zoneBlue;
+					a{
+						color:#fff;
+					}
+				}
+				a{
+					color:$zoneGray;
+					font: 18px;
+					text-decoration: none;
+					@include pad-xs-767{
+						color:$zoneGray;
+						font-size: 20px;
+						text-align: center;
+					}
+					@include phone-xl-600{
+						white-space:nowrap;
+					}
+				}
+				@include pad-m-1080{
+					margin:1rem;
+				}
+				@include phone-xl-600{
+					text-align-last: left;
+				}
+			}
+
+		}
+
+
+		.ct_wrap{
+			position: relative;
+			background: #fff;
+			border-top: 2px solid $zoneBlue;
+			width: 100%;
+			@include pad-xs-767{
+				border-top: 2px solid $zoneBlue;
+				padding:0 0 0 0;
+			}
+			.tabsCt{
+				display: block;
+				min-height: 600px;
+				margin:0 auto;
+				min-width: 900px;
+				@include pad-m-1080{
+					min-width: auto;
+					
+				}
+				@include pad-xs-767{
+					min-height: auto;
+				}
+				.bread{
+					display: block;
+					width: 90%;
+					margin:0 auto 1rem auto;
+					padding: 1rem;
+					max-width:1440px;
+					@include pad-xs-767{
+						display: none;
+					}									
+					a{
+						color: $zoneBlue;
+						text-decoration: none;
+						word-spacing:2px;
+						&:hover{
+							color:$zoneDarkB;
+						}
+					}
+				}
+
+				ul.product-wrap{
+					width: 100%;
+					background:$zoneLightG;
+					padding: 4rem;
+					max-width:100%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					&:last-child{
+						margin:0 0 4rem 0;
+					}
+					@include pad-m-1080 {
+						&:last-child{
+							margin:0 0 6rem 0;
+						}
+					}
+					@include pad-xs-767{
+						&:last-child{
+							margin:0;
+						}						
+					}
+					@include phone-xl-600{
+						padding: 2rem;
+					}
+					@include phone-m-440{
+						padding: 1rem;
+					}					
+					&.blue{
+						background:$zoneBlue;
+						.info{
+							.tip{
+								color: #fff;
+							}
+							h2.title{
+								color: #fff;
+							}
+							p.txt{
+								color: #fff;
+							}
+							.moreBtn{
+								color: #fff;
+							}
+
+						}
+					}
+					li{
+						width: 100%;
+						max-width: 1300px;
+						padding:2rem;
+						margin:2rem 0;
+						display: flex;
+						height: 380px;
+						cursor:default;
+						border-radius:0;
+						&:hover{
+							background:transparent;
+						}
+						@include pad-s-900{
+							flex-wrap:wrap;
+							height: auto;
+							margin:0;
+						}						
+						.info{
+							text-align: left;
+							width: 55%;
+							margin:0 5% 0 0;
+							display: flex;
+							flex-wrap:wrap;
+							@include pad-s-900{
+								width: 100%;
+								margin:0;
+							}
+							.tip{
+								color: $zoneBlue;
+								font: 20px;
+								width: 100%;
+							}
+							h2.title{
+								color: $zoneBlue;
+								font-size: 76px;
+								width: 100%;
+								@include phone-l-500{
+									font-size: 48px;
+								}
+
+							}
+							p.txt{
+								color:$zoneBlue;
+								font-size: 16px;
+							}
+							.moreBtn{
+								cursor:pointer;
+								color:$zoneBlue;
+								display: inline-block;
+								position: relative;
+								@include hover;
+								&::before{
+									content:'';
+									width: 40px;
+									height: 24px;
+									position: absolute;
+									right: -2.5em;
+									background: url(../images/rightarrow.png) center center no-repeat;
+									background-size: contain;
+									animation: leftRight 1s infinite ease-in-out;
+								}
+								@keyframes leftRight {
+									0%{
+										right:-2.5em;
+									}
+									50%{
+										right:-3em;
+									}
+									100%{
+										right:-2.5em;
+									}					
+								}
+							}
+						}
+						.pic{
+							width: 40%;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							@include pad-s-900{
+								width: 80%;
+								margin:0;
+								margin: 1rem auto 0 auto;
+							}
+							@include phone-l-500{
+								width: 100%;
+								margin:0;
+								margin: 1rem auto 0 auto;
+								
+							}														
+							img{
+								width: 70%;
+								max-width:100%;
+								object-fit:fill;
+								@include phone-l-500{
+									width: 90%;
+									max-width:100%;
+									object-fit:fill;									
+								}
+
+							}
+						}
+					}
+
+				}
+				.product-detail-wrap{
+					//- *{border: 1px solid #000;}
+					width: 100%;
+					background:$zoneLightG;
+					padding: 0rem 4rem 4rem 4rem;
+					max-width:100%;
+					margin:0 auto;
+					display: flex;
+					flex-direction:row;
+					align-items: center;
+					list-style-type: disc !important;
+					&:last-child{
+						margin:0 0 4rem 0;
+					}
+					@include pad-m-1080 {
+						&:last-child{
+							margin:0 0 6rem 0;
+						}
+					}
+					@include pad-xs-767{
+						&:last-child{
+							margin:0;
+						}						
+					}
+					@include phone-xl-600{
+						padding: 2rem;
+					}
+					@include phone-m-440{
+						padding: 1rem;
+					}					
+
+					.container{
+						width: 100%;
+						max-width: 1300px;
+						padding:2rem;
+						margin:2rem auto;
+						display: flex;
+						height: auto;
+						cursor:default;
+						border-radius:0;
+						flex-wrap:wrap;
+						&:hover{
+							background:transparent;
+						}
+						@include pad-s-900{
+							height: auto;
+							margin:0;
+						}
+						@include phone-xl-600{
+							padding: 0rem;
+						}						
+						.features{
+							width: 60%;
+							display: flex;
+							position: relative;
+							order:3;
+							@include pad-m-1080{
+									flex-direction: column;
+									padding:0;
+									width: 100%;
+							}
+							ol.list{
+								width: 100%;
+								padding:2rem;
+								margin: 0;
+								box-sizing: border-box;
+								@include pad-m-1080{
+									width: 100%;
+								}
+								@include phone-xl-600{
+									padding: 0 0 1rem 0;
+								}
+								li{
+									list-style-type:decimal !important;
+									height: auto;
+									padding: 0;
+									margin: 0 0 0 1em;;
+									line-height: 1.6em;
+								}
+							}
+							h3.title{
+								color:$zoneBlue;
+								font-size: 36px;
+							}
+						}
+						.featureTip{
+							width: 40%;
+							display: block;
+							color:#fff;
+							order:4;
+							@include pad-m-1080{
+								position: relative;
+								width: 100%;
+								order:2;
+								margin:0 0 2rem 0;
+							}
+							@include phone-xl-600{
+								border-radius: 20px;								
+							}
+							span{
+								padding: 2rem;
+								background: $zoneBlue;
+								display: block;
+								border-radius: 200px;
+								font-size: 16px;
+								@include phone-xl-600{
+									padding: 1.5rem;
+									border-radius: 60px;								
+								}								
+							}															
+
+						}						
+											
+						.info{
+							text-align: left;
+							width: 100%;
+							display: flex;
+							flex-wrap:wrap;
+							position: relative;
+							box-sizing: border-box;
+							@include pad-s-900{
+								width: 100%;
+								margin:0;
+							}
+							.tip{
+								color: $zoneBlue;
+								font: 20px;
+								width: 100%;
+							}
+							h2.title{
+								color: $zoneBlue;
+								font-size: 76px;
+								width: 100%;
+								@include phone-l-500{
+									font-size: 48px;
+								}
+
+							}
+							p.txt{
+								color:$zoneBlue;
+								font-size: 16px;
+							}
+							.moreBtn{
+								cursor:pointer;
+								color:$zoneBlue;
+								display: inline-block;
+								position: relative;
+								@include hover;
+								&::before{
+									content:'';
+									width: 40px;
+									height: 24px;
+									position: absolute;
+									right: -2.5em;
+									background: url(../images/rightarrow.png) center center no-repeat;
+									background-size: contain;
+									animation: leftRight 1s infinite ease-in-out;
+								}
+								@keyframes leftRight {
+									0%{
+										right:-2.5em;
+									}
+									50%{
+										right:-3em;
+									}
+									100%{
+										right:-2.5em;
+									}					
+								}
+							}
+							.purchase{
+								display: block;
+								position: absolute;
+								top: 0;
+								right: 0;
+								@include pad-s-900{
+									position: relative;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+								}
+								span{
+									font-size: 20px;
+									display: block;					
+									color:$zoneBlue;
+									width: 100%;
+									margin: 0 0 1rem 0;
+									//cursor:pointer;
+									text-align: center;
+									// &:hover{
+									// 	color:$zoneDarkB;
+									// }
+									@include pad-s-900{
+									padding:0.5rem 0rem;
+									margin:0.5rem 0rem;
+									
+									}								
+								}
+								a{
+									padding:0.5rem 1rem;
+									display: block;
+									width: auto;
+									text-align: center;
+									border-radius: 2rem;
+									border: 1px solid $zoneBlue;
+									text-decoration: none;
+									color: $zoneBlue;
+									white-space: nowrap;
+									margin:0.5rem;
+									&:hover{
+										color:$zoneDarkB;
+										border: 1px solid $zoneDarkB;
+									}
+								}
+							}							
+						}
+						.pic{
+							width: 50%;
+							margin:0 10% 0 0;
+							order:1;
+							img{
+								width: 100%;
+								max-width:100%;
+								object-fit:fill;
+
+
+							}
+							@include pad-m-1080{
+								width: 70%;
+								margin:0 auto;
+							}									
+							@include phone-l-500{
+								width: 100%;
+								max-width:100%;	
+								max-height:300px;	
+								overflow: hidden;						
+							}							
+						}
+						.countForm{
+							width:40%;
+							margin:0 auto;
+							display: flex;
+							align-items: center;
+							justify-content:flex-start;
+							order:2;
+							@include pad-m-1080{
+								width:100%;
+								flex-direction:column;
+								order:4;
+							}						
+							@include pad-s-900{
+								margin:0;
+								margin: 1rem auto 0 auto;
+								justify-content: center;							
+							}
+							@include phone-l-500{
+								margin:0;
+								margin: 1rem auto 0 auto;
+								
+							}														
+
+							.purchase-form{
+								display: block;
+								width: 100%;
+								padding:2%;
+								box-sizing: border-box;
+								color:$zoneBlue;
+								@include pad-m-1080{
+									width: 60%;
+								}								
+								@include pad-xs-767{
+									width: 100%;
+								}								
+								.price{
+									width: 100%;
+									display: flex;
+									align-items: center;
+									justify-content: space-between;
+									span{
+										font-size: 30px;
+										width: auto;
+										margin: 0 0 0 2rem;
+									}
+									.num{
+										width: auto;
+										font-size: 60px;
+										display: block;
+										text-align: right;
+										.pack{
+											font-size: 14px;
+											text-align: center;
+										}
+									}
+								}
+								.count{
+									width: 100%;
+									display: flex;
+									justify-content: space-between;
+									flex-wrap: wrap;
+									align-items: center;
+									margin:0 0 1rem 0;
+									.btn{
+										width: 60px;
+										height: 60px;
+										border: none;
+										&.plus{
+											background: url('../images/plus.svg') no-repeat center center;
+											background-size: contain;
+										}
+										&.minus{
+											background: url('../images/minus.svg') no-repeat center center;
+											background-size: contain;
+										}
+									}
+									input{
+										text-align: center;
+										font-size: 60px;
+										color:$zoneBlue;
+										width: calc(100% - 140px);
+										border:none;
+										background: $zoneLightG;
+										outline:none;
+									}
+									input::-webkit-outer-spin-button,
+									input::-webkit-inner-spin-button {
+									/* display: none; <- Crashes Chrome on hover */
+									-webkit-appearance: none;
+									margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+									}
+
+									input[type=number] {
+									-moz-appearance:textfield; /* Firefox */
+}									
+									label{
+										width: 100%;
+										text-align: center;
+										
+									}
+								}
+								.addCart{
+									position: relative;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									margin:0 0 1rem 0;
+									button{
+										width:0 auto;
+										padding:0.5rem 2rem;
+										border: 1px solid $zoneBlue;
+										font-size: 16px;
+										background: $zoneLightG;
+										border-radius: 2rem;
+										color: $zoneBlue;
+										&:hover{
+											background-color: $zoneBlue;
+											color:#fff;
+										}
+									}
+								}
+								.deliveryInfo{
+									h5.title{
+										font-size: 14px;
+										font-weight: bold;
+									}
+									.hkArea, .overSeaArea{
+										
+										display: flex;
+										flex-direction: column;
+										font-size: 14px;
+										.AreaBtn{
+											position: relative;
+											display:block;
+											width: 100%;
+											padding: 0;
+											line-height: 2em;
+											color:$zoneBlue;
+											display: block;
+											font-size: 16px;
+											font-weight: bold;
+											margin:0 0 0.5rem 0;
+											cursor:pointer;
+											span{
+												width: auto;
+											}
+											.arrow{
+												position: absolute;
+												right: 0;
+												top: 2px;
+												width: 18px;
+												height: 18px;
+												background: url(../images/purchaseArrow.svg) no-repeat center center;
+												box-sizing: contain;
+												animation: rotate 0.5s ease-in-out;
+												transform:rotate(0deg);
+											}	
+											&.rotate{
+												.arrow{
+													animation: rotate1 0.5s ease-in-out ;
+													transform:rotate(180deg);
+												}
+											}
+											@keyframes rotate {
+												from{
+													transform:rotate(180deg);
+												}
+												to{
+													transform:rotate(0deg);
+												}	
+											}
+											@keyframes rotate1 {
+												from{
+													transform:rotate(0deg);
+												}
+												to{
+													transform:rotate(180deg);
+												}	
+											}																				
+										}
+										.wrap{
+											display: none;
+											.tip{
+												display: flex;
+												justify-content: space-between;		
+											}
+											span{
+												margin:0 0 0.5rem 0;
+											}
+										}									
+
+									}
+								}							
+							}							
+							
+						}
+					}
+
+				}
+				.product-other-wrap{
+
+					width: 100%;
+					background:$zoneLightG;
+					.pd-slider{
+						position: relative;
+						margin:0 auto 4rem auto;
+						padding:0 0 4rem 0;
+						height: auto;
+						@include pad-xs-767{
+							margin:0 auto;
+							padding:0 0 2rem 0;
+						}					
+						.pd-wrap{
+							width: 100%;
+
+							.pic{
+								min-height:300px;
+								margin: 0 0 1rem 0;
+								img{
+									max-width:100%;
+									object-fit:fill;
+									
+								}
+							}
+							h5.title{
+							
+								font-size: 18px;
+								text-align: center;
+							}
+							p.txt{
+								
+								font-size: 16px;
+								text-align: center;
+							}
+						}
+					}
+					owl-nav,owl-dots{
+						display: none;
+					}
+				}
+
+
+			}
+
+			
+		}						
+	}
+
+
+}

@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Noto+Sans+TC:wght@100;500;700&family=Roboto:wght@100;400;700&display=swap');
+@import '_rwd.scss';
+@import '_color.scss';
+
+@mixin transCenter($x,$y) {
+	transform: translate($x,$y);
+}
+@mixin hover{
+	cursor:pointer;
+	&:hover{
+		@include transCenter(-1px,-1px);
+		}
+}
+@mixin topWrap($t){
+	.top_wrap{
+		background-color: #fff;
+		width: 100%;
+		position: absolute;
+		top:$t;
+		left: 50%;
+		@include transCenter(-50%,0);
+		@include pad-xs-767{
+			position: relative;
+			top: 0;
+		}
+	}	
+}
+
+.news-main-banner{
+	width: 100%;
+	position: relative;
+	max-height:80vh;
+	@include pad-xs-767{
+		max-height:50vh;
+	}
+	.pic{
+		position: relative;
+		min-height: 80vh;
+		min-width: 100vw;
+		@include pad-xs-767{
+			min-height:50vh;
+		}								
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;		
+		}
+		&.sample-news{
+			background:url(../images/news_banner.jpg) no-repeat center center;
+			background-size:cover;
+		}				
+	}
+
+}
+
+.news-body{
+	.article-wrap{
+		.top_wrap{
+			max-width:1200px;
+			position: absolute;
+			top: -360px;
+			left:50%;
+			@include laptop-s-1200{
+				width: 90%;
+				max-width:1000px;
+				top: -360px;
+			}			
+			@include pad-m-1080{
+				width: 90%;
+				max-width:800px;
+				top: -370px;
+			}
+			@include pad-xs-767{
+				width: 100%;
+				max-width:700px;				
+				position: relative;
+				top: 0;
+			}									
+			ul{
+				width: 400px;
+				justify-content:space-around;
+				box-sizing: border-box;
+				justify-content: center;
+				@include pad-m-1080{
+					width: 100%;
+					flex-wrap:wrap;
+					margin: 0 0 2rem 0;
+					justify-content: center;
+				}
+				@include pad-xs-767{
+					width: 100%;
+					margin: 0;
+					justify-content:flex-start;
+					overflow: auto;
+					white-space:nowrap;
+					flex-wrap:nowrap;
+					
+				}			
+				@include phone-xl-600{
+					margin: 0;
+					justify-content:flex-start;
+					overflow: auto;
+					white-space:nowrap;
+					flex-wrap:nowrap;
+				}			
+				li{
+					padding:0.1rem 1rem;
+					background:transparent;
+					border-radius: 40px;
+					box-sizing: border-box;
+					cursor:pointer;
+					&:hover{
+						background:$zoneBlue;
+						a{
+							color:#fff;
+						}
+										
+					}
+					&.active{
+						background:$zoneBlue;
+						a{
+							color:#fff;
+						}
+					}
+					a{
+						color:#fff;
+						font: 18px;
+						text-decoration: none;
+						@include pad-xs-767{
+							color:$zoneGray;
+							font-size: 20px;
+						}
+					}
+					@include pad-m-1080{
+						margin:0.5rem;
+					}
+					@include phone-xl-600{
+						margin: 0.25rem;
+					}					
+				}
+
+			}			
+		}
+	}
+
+}
+
+.news-more{
+	width: 100%;
+	display: block;
+	flex-wrap:wrap;
+	position: relative;
+	background-color: #fff;
+	height:auto;
+	.container{
+		padding-top: 0vh;
+		padding-bottom: 10vh;
+		position: relative;
+		width: 100%;
+		max-width:1300px;
+		.row{
+			position: relative;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			h3.title{
+				font-family: 'Cormorant Garamond';
+				font-weight: bold;
+				font-size: 36px;
+				display: block;
+				margin:0 0 3rem 0;
+			}
+			.news-wrap{
+				position: relative;
+				margin:0 auto;
+				.tabsList {
+					display: block;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					width: 24px;
+					position: absolute;
+					bottom:calc(50% - 8em);
+					left:-30px;
+					@include transCenter(0,-50%);
+					p{
+						color:$zoneBlue;
+						display: block;
+						transform: rotate(-90deg);
+					}
+					@include pad-xs-767{
+						display: none;
+					}
+					.tabBtn{
+						width: 24px;
+						height: 24px;
+						border-radius: 50%;
+						border: 2px solid $zoneLightG;
+						box-sizing: border-box;
+						background: $zoneLightG;
+						display: flex;
+						align-content: center;
+						align-items: center;
+						justify-content: center;
+						margin:0 0 10px 0;
+						cursor:pointer;
+							.point{
+								width:8px;
+								height:8px;
+								border-radius: 50%;
+								background-color: $zoneBlue;
+								
+							}
+						&.active{
+							border: 2px solid $zoneBlue;					
+						}
+						&:hover,:active,:focus{
+							border: 2px solid $zoneBlue;	
+						}
+						
+					}				
+				}
+
+				ul.tabsCt{
+					width: 100%;
+					color:$zoneDarkG;
+					padding:0 0 3rem 0 ;
+					list-style:none;
+					margin:0;
+					display: flex;
+					flex-wrap: wrap;
+					align-items:start;
+					@include pad-xs-767{
+						max-height:auto;
+					}
+					li{
+						display: flex;
+						position: relative;
+						align-items: center;
+						justify-content: center;
+						width: 100%;
+						margin: 0 0 2em 0;
+						&:last-child{
+							margin: 0 0 0 0;
+						}
+						@include pad-xs-767{
+							flex-direction:column;
+							.date{
+								flex-wrap:nowrap;
+								justify-content: flex-start !important;
+								width: 100%;
+							}
+						}		
+						.date{
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							padding: 0.5em;
+							margin-right:20px;
+						}
+						.title{
+							margin:0 0 1rem 0;
+						}
+						.txt{
+							display: flex;
+							flex-wrap:wrap;
+							justify-content: start;
+							align-items: center;				
+							.title{
+								font-weight: bold;
+								font-size: 24px;
+								width: 90%;
+							}
+							p{
+								width: 90%;
+							}
+						}
+						.news.more{
+							width: 48px;
+							height: 48px;
+							position: absolute;
+							top: 50%;
+							right: 0;
+							@include transCenter(0,-50%);
+							display: block;
+							background:url(../images/news_more.svg) no-repeat center center;
+							background-size: 50%;
+							padding:12px;
+							border-radius:50%;
+							border: 2px solid $zoneLightG;
+							&:hover,&.active{
+								background:url(../images/news_more_over.svg) no-repeat center center;
+								background-size: 50%;
+								border: 2px solid $zoneBlue;
+							}
+							@include pad-xs-767{
+								position: absolute;
+								top: 2rem;
+								right: 0;
+							}		
+
+						}
+						.tip{
+							font-size: 16px;
+							color:$zoneGray;
+							width: 100%;
+						}
+					}
+					h6{
+						font-size: 20px;
+					}
+					h2{
+						font-size: 72px;
+						margin:0.5em 0;
+					}
+					p{
+						font-size: 16px;
+					}
+					.btn{
+						cursor:pointer;
+						color:$zoneDarkG;
+						display: inline-block;
+						position: relative;
+						margin-right:50px;
+						@include hover;
+						&::before{
+							content:'';
+							width: 40px;
+							height: 24px;
+							position: absolute;
+							right: -2.5em;
+							background: url(../images/rightarrow.png) center center no-repeat;
+							background-size: contain;
+							animation: leftRight 1s infinite ease-in-out;
+						}
+						@keyframes leftRight {
+							0%{
+								right:-2.5em;
+							}
+							50%{
+								right:-3em;
+							}
+							100%{
+								right:-2.5em;
+							}					
+						}
+
+					}
+					.pic{
+						width: 50%;
+						margin:3rem 0 0 0;
+					}
+
+				}		
+			}			
+		}
+	}
+
+}
+

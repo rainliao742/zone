@@ -1,0 +1,414 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Noto+Sans+TC:wght@100;500;700&family=Roboto:wght@100;400;700&display=swap");
+.registered-body {
+  position: relative;
+  min-height: auto;
+  background: #E5E5E5;
+}
+.registered-body .container-fluid.register-wrap {
+  padding: 0;
+  margin: 120px 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .registered-body .container-fluid.register-wrap {
+    margin: 0;
+  }
+}
+.registered-body .ct_wrap {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .registered-body .ct_wrap {
+    border-top: 2px solid #0001E5;
+    padding: 0 0 0 0;
+  }
+}
+.registered-body .ct_wrap .close-row {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 2rem 0 0 0;
+}
+@media screen and (max-width: 800px) {
+  .registered-body .ct_wrap .close-row {
+    padding: 1rem 0 1rem 0;
+    background: #0001E5;
+    margin: 0;
+  }
+}
+.registered-body .ct_wrap .close-row .closeBtn {
+  width: 24px;
+  height: 24px;
+  background: url(../images/close_btn.svg) no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.registered-body .ct_wrap .close-row .closeBtn:hover {
+  transform: rotate(90deg);
+}
+@media screen and (max-width: 800px) {
+  .registered-body .ct_wrap .close-row .closeBtn {
+    background: url(../images/close_white_btn.svg) no-repeat center center;
+    background-size: contain;
+  }
+}
+.registered-body .ct_wrap .container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 2rem;
+  display: flex;
+  height: auto;
+  cursor: default;
+  border-radius: 0;
+  flex-wrap: wrap;
+}
+.registered-body .ct_wrap .container:hover {
+  background: transparent;
+}
+@media (max-width: 900px) {
+  .registered-body .ct_wrap .container {
+    height: auto;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .registered-body .ct_wrap .container {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .registered-body .ct_wrap .container {
+    padding: 0rem;
+  }
+}
+.registered-body .ct_wrap .container .register-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  position: relative;
+}
+.registered-body .ct_wrap .container .register-row p.termText {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+@media screen and (max-width: 600px) {
+  .registered-body .ct_wrap .container .register-row p.termText {
+    width: 90%;
+  }
+}
+.registered-body .ct_wrap .container .basic-wrap, .registered-body .ct_wrap .container .shipping-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+.registered-body .ct_wrap .container .basic-wrap .input, .registered-body .ct_wrap .container .shipping-wrap .input {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .registered-body .ct_wrap .container .basic-wrap .input, .registered-body .ct_wrap .container .shipping-wrap .input {
+    flex-wrap: wrap;
+  }
+}
+.registered-body .ct_wrap .container .basic-wrap .input .labelInput, .registered-body .ct_wrap .container .shipping-wrap .input .labelInput {
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  padding: 1rem 0.5rem 1rem 0;
+  border-bottom: 2px solid #949799;
+  border-top: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+  border-left: 1px solid #E5E5E5;
+  margin: 0 1rem 2rem 0;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .labelInput:hover, .registered-body .ct_wrap .container .basic-wrap .input .labelInput:active, .registered-body .ct_wrap .container .basic-wrap .input .labelInput:focus, .registered-body .ct_wrap .container .shipping-wrap .input .labelInput:hover, .registered-body .ct_wrap .container .shipping-wrap .input .labelInput:active, .registered-body .ct_wrap .container .shipping-wrap .input .labelInput:focus {
+  border-bottom: 2px solid #0001E5;
+  color: #0001E5;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .labelInput label, .registered-body .ct_wrap .container .shipping-wrap .input .labelInput label {
+  display: inline-block;
+  font-size: 18px;
+  white-space: nowrap;
+  color: #949799;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .labelInput label.hint, .registered-body .ct_wrap .container .shipping-wrap .input .labelInput label.hint {
+  color: #FF0000;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .labelInput input, .registered-body .ct_wrap .container .shipping-wrap .input .labelInput input {
+  width: 100%;
+  color: #949799;
+  font-size: 18px;
+  background: #E5E5E5;
+  outline: none;
+  text-indent: 1em;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .labelInput input:hover, .registered-body .ct_wrap .container .basic-wrap .input .labelInput input:active, .registered-body .ct_wrap .container .basic-wrap .input .labelInput input:focus, .registered-body .ct_wrap .container .shipping-wrap .input .labelInput input:hover, .registered-body .ct_wrap .container .shipping-wrap .input .labelInput input:active, .registered-body .ct_wrap .container .shipping-wrap .input .labelInput input:focus {
+  color: #0001E5;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .labelInput span.hint, .registered-body .ct_wrap .container .shipping-wrap .input .labelInput span.hint {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FF0000;
+}
+.registered-body .ct_wrap .container .basic-wrap .input label.outside, .registered-body .ct_wrap .container .shipping-wrap .input label.outside {
+  display: none;
+}
+.registered-body .ct_wrap .container .basic-wrap .input input.outside, .registered-body .ct_wrap .container .shipping-wrap .input input.outside {
+  width: 100%;
+  color: #0001E5;
+  font-size: 18px;
+  background: #E5E5E5;
+  outline: none;
+  text-indent: 0em;
+  padding: 1rem 0.5rem 1rem 0;
+  border-bottom: 2px solid #949799;
+  border-top: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+  border-left: 1px solid #E5E5E5;
+  margin: 0 0 2rem 0;
+}
+.registered-body .ct_wrap .container .basic-wrap .input input.outside:hover, .registered-body .ct_wrap .container .basic-wrap .input input.outside:active, .registered-body .ct_wrap .container .basic-wrap .input input.outside:focus, .registered-body .ct_wrap .container .shipping-wrap .input input.outside:hover, .registered-body .ct_wrap .container .shipping-wrap .input input.outside:active, .registered-body .ct_wrap .container .shipping-wrap .input input.outside:focus {
+  color: #0001E5;
+  border-bottom: 2px solid #0001E5;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  border-bottom: 2px solid #949799;
+  margin: 0 1rem 2rem 0;
+  position: relative;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap:hover, .registered-body .ct_wrap .container .basic-wrap .input .radio-wrap:active, .registered-body .ct_wrap .container .basic-wrap .input .radio-wrap:focus, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap:hover, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap:active, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap:focus {
+  color: #0001E5;
+  border-bottom: 2px solid #0001E5;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap:hover .radioGroup label span, .registered-body .ct_wrap .container .basic-wrap .input .radio-wrap:active .radioGroup label span, .registered-body .ct_wrap .container .basic-wrap .input .radio-wrap:focus .radioGroup label span, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap:hover .radioGroup label span, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap:active .radioGroup label span, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap:focus .radioGroup label span {
+  color: #0001E5;
+}
+@media screen and (max-width: 600px) {
+  .registered-body .ct_wrap .container .basic-wrap .input .radio-wrap, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap {
+    padding: 1rem 0 1rem 0;
+    margin: 0 1rem 1rem 0;
+  }
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup {
+  width: auto;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup span, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup span {
+  cursor: default;
+  color: #949799;
+  font-size: 18px;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup span.act, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup span.act {
+  color: #333;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup label, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup label {
+  display: block;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  padding: 0 1em 0 1em;
+  width: 100%;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup input, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup input {
+  visibility: hidden;
+  position: absolute;
+  font-size: 18px;
+  top: 0;
+  right: 0;
+  height: auto;
+  margin: 0;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup .radio-button, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup .radio-button {
+  /* 自定義樣式的span */
+  height: auto;
+  width: auto;
+  display: block;
+  position: relative;
+  text-align: center;
+  left: 0%;
+  top: 0;
+  cursor: pointer;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup .radio-button:hover::after, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup .radio-button:hover::after {
+  color: #0001E5;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup .radio-button::after, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup .radio-button::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  border-bottom: 2px solid #0001E5;
+  color: #949799;
+}
+.registered-body .ct_wrap .container .basic-wrap .input .radio-wrap .radioGroup .radioGender:checked ~ label .radio-button, .registered-body .ct_wrap .container .shipping-wrap .input .radio-wrap .radioGroup .radioGender:checked ~ label .radio-button {
+  opacity: 1;
+  color: #0001E5;
+}
+.registered-body .ct_wrap .container .payment-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 86%;
+  margin: 0 auto 2rem auto;
+}
+.registered-body .ct_wrap .container .payment-wrap .input {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.registered-body .ct_wrap .container .payment-wrap .input.w50 {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 800px) {
+  .registered-body .ct_wrap .container .payment-wrap .input.w50 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .registered-body .ct_wrap .container .payment-wrap .input.w50 {
+    width: 100%;
+  }
+}
+.registered-body .ct_wrap .container .payment-wrap .input .buttons, .registered-body .ct_wrap .container .payment-wrap .input .agreement, .registered-body .ct_wrap .container .payment-wrap .input .bankInfo, .registered-body .ct_wrap .container .payment-wrap .input .checkRobot {
+  width: 100%;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .registered-body .ct_wrap .container .payment-wrap .input .buttons, .registered-body .ct_wrap .container .payment-wrap .input .agreement, .registered-body .ct_wrap .container .payment-wrap .input .bankInfo, .registered-body .ct_wrap .container .payment-wrap .input .checkRobot {
+    padding: 0;
+    width: 100%;
+  }
+}
+.registered-body .ct_wrap .container .payment-wrap .input .agreement {
+  align-items: center;
+  position: relative;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .agreement label {
+  display: block;
+  width: 26px;
+  height: 24px;
+  margin: 0 0.5rem 0 0;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .agreement a {
+  text-decoration: none;
+  margin: 0 0.2rem;
+  color: #0001E5;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .agreement a:hover {
+  color: #050c74;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .agreement p {
+  font-size: 14px;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .registered-body .ct_wrap .container .payment-wrap .input .agreement p:last-child {
+    padding: 0 0 0 2.4em;
+  }
+}
+.registered-body .ct_wrap .container .payment-wrap .input .agreement input[type=checkbox] {
+  display: none;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .agreement input[type=checkbox] + label span {
+  display: inline-block;
+  width: 26px;
+  height: 24px;
+  margin: 0px 10px 0 0;
+  background: url(../images/checked-box.png) 0 0 no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .agreement input[type=checkbox]:checked + label span {
+  background: url(../images/checked-box.png) -24px 0 no-repeat;
+  background-size: cover;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .agreement span.hint {
+  display: block;
+  font-size: 14px;
+  position: relative;
+  color: #FF0000;
+  width: 100%;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .buttons button {
+  width: auto;
+  border: 2px solid #0001E5;
+  font-size: 14px;
+  min-width: 100px;
+  margin: 0 1rem 1rem 0;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .buttons button.act {
+  background-color: #0001E5;
+  color: #fff;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .bankInfo {
+  width: 80%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .bankInfo span {
+  width: 100%;
+  color: #0001E5;
+  font-size: 16px;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .checkRobot {
+  width: 80%;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  .registered-body .ct_wrap .container .payment-wrap .input .checkRobot {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .registered-body .ct_wrap .container .payment-wrap .input .checkRobot {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+}
+.registered-body .ct_wrap .container .payment-wrap .input .checkRobot img {
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem 0 0 0;
+}
+.registered-body .ct_wrap .container .payment-wrap .input .checkRobot span.hint {
+  display: block;
+  font-size: 14px;
+  position: relative;
+  color: #FF0000;
+  width: 100%;
+}
+
+/*# sourceMappingURL=register.css.map */

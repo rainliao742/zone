@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="http://zoneoptics-prod.justforuat.com/vendor/webkul/ui/assets/images/favicon.ico" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://zoneoptics-prod.justforuat.com/themes/velocity/assets/css/velocity-admin.css">
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/blog_about.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/contact_privacy.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>zone optics</title>
+  </head>
+  <body> 
+    <header>
+      <div class="wrap"><a class="logo" id="logoWhite" href="index.html">logo</a>
+        <ul class="menu"> 
+          <li><a href="product.html">Product</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li> 
+            <div class="cart" id="cart">
+              <div class="num">99</div>
+            </div>
+          </li>
+          <li> 
+            <div class="menuBtn" id="menuBtn"></div>
+          </li>
+        </ul>
+        <ul class="menu-idv">
+          <li><a class="login" href="login.html">login</a></li>
+          <li class="none"><a class="showName" href="#">Hinzen				</a></li>
+          <li class="none"><a class="profile" href="#">profile				</a></li>
+          <li class="none"><a class="logout" href="#">logout				</a></li>
+          <ul class="menu-status">
+            <li class="none"><a class="login" href="login-check.html">login			</a></li>
+            <li><a class="showName" href="#">Hinzen				</a></li>
+            <li><a class="profile" href="profile.html">profile				</a></li>
+            <li><a class="logout" href="#">logout</a></li>
+          </ul>
+        </ul>
+      </div>
+    </header>
+    <div class="menu_wrap">
+      <div class="bg"></div>
+      <div class="container">
+        <div class="row">
+          <button class="close"></button>
+          <div class="logo"></div>
+          <form class="searchBar" action="" method="get"> 
+            <button class="magnifier"></button>
+            <label>searchBar</label>
+            <input id="searchBar" type="search" name="searchBar" placeholder="SEARCH">
+          </form>
+          <button class="m_magnifier"></button>
+          <ul class="m_login">
+            <!--未登入-->
+            <li style="display:none;"><a href="logo-in.html">login</a></li>
+            <!--已登入-->
+            <li>
+              <div class="status">Hinzen															</div>
+            </li>
+            <div class="statusInfo"><a href="#">Profile</a><a href="#">logout			</a></div>
+          </ul>
+          <form class="m_searchBar" action="" method="get"> 
+            <label>searchBar</label>
+            <input id="m_searchBar" type="search" name="searchBar" placeholder="SEARCH">
+            <div class="arrow"></div>
+          </form>
+        </div>
+        <!--桌機版-->
+        <div class="row desk">
+          <div class="text-wrap col-xl-2 col-md-6">
+            <ul class="main-menu">
+              <li><a href="index.html">Home</a>
+                <ul class="sub">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <li><a href="payment.html">Payment</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="text-wrap col-xl-4 col-md-6">
+            <ul class="main-menu">
+              <li><a href="blog.html">Blog</a>
+                <ul class="sub">
+                  <li><a href="blog-inner.html">Eye Health & Vision</a></li>
+                  <li><a href="blog-inner.html">Myopia Management</a></li>
+                  <li><a href="blog-inner.html">About Contact Lenses</a></li>
+                  <li><a href="blog-inner.html">Clear lab</a></li>
+                  <li><a href="blog-inner.html">Menicon</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="text-wrap col-xl-3 col-md-6">
+            <ul class="main-menu">
+              <li><a href="news.html">News Center</a>
+                <ul class="sub">
+                  <li><a href="news.html">Company News</a></li>
+                  <li><a href="news.html">Press Release</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="text-wrap col-xl-3 col-md-6">
+            <ul class="main-menu">
+              <li><a href="#">Stockists</a></li>
+            </ul>
+            <ul class="main-menu terms">
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="privacy.html">Privacy & Policy</a></li>
+              <li><a href="terms.html">Terms & Services</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--手機版-->
+        <div class="row mobile">
+          <div class="text-wrap col-xl-3 col-md-6">
+            <ul class="main-menu">
+              <li class="home"><a href="index.html">Home</a>
+                <ul class="sub">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <li><a href="payment.html">Payment</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="text-wrap col-xl-3 col-md-6">
+            <ul class="main-menu">
+              <li class="blogs"><a href="blog.html">Blog</a>
+                <ul class="sub">
+                  <li><a href="blog-inner.html">Eye Health & Vision</a></li>
+                  <li><a href="blog-inner.html">Myopia Management</a></li>
+                  <li><a href="blog-inner.html">About Contact Lenses</a></li>
+                  <li><a href="blog-inner.html">Clear lab</a></li>
+                  <li><a href="blog-inner.html">Menicon</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="text-wrap col-xl-3 col-md-6">
+            <ul class="main-menu">
+              <li class="newsCenter"><a href="news.html">News Center</a>
+                <ul class="sub">
+                  <li><a href="news-inner.html">Company News</a></li>
+                  <li><a href="news-inner.html">Press Release</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="text-wrap col-xl-3 col-md-6">
+            <ul class="main-menu">
+              <li class="stockists"><a href="#">Stockists</a></li>
+            </ul>
+            <ul class="main-menu terms" id="m-terms">
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="privacy.html">Privacy & Policy</a></li>
+              <li><a href="terms.html">Terms & Services</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="main-banner owl-carousel" id="home">
+      <div class="content">
+        <div class="pic-wrap">
+          <div class="pic bg1">
+            <!--img(src="images/R.png", alt="")-->
+          </div>
+        </div>
+        <div class="text-wrap">
+          <div class="wrap col-xs-6 col-md-12">
+            <h4>ZONE OPTICS LIMITED視界光學有限公司1</h4>
+            <div class="title"> Leading Expert in Specialty Contact Lens Design and Production</div>
+            <p>incorporated on 07-JUN-2021 as a Private company limited by shares registered in Hong Kong. It's company registration number is: 3055455. The date of annual examination for this private company</p>
+            <div class="btn">LEARN MORE</div>
+          </div>
+          <div class="scroll">
+            <div class="mouse"></div>
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="pic-wrap">
+          <div class="pic bg1"></div>
+        </div>
+        <div class="text-wrap">
+          <div class="wrap col-xs-6 col-md-12">
+            <h4>ZONE OPTICS LIMITED視界光學有限公司2</h4>
+            <div class="title"> Leading Expert in Specialty Contact Lens Design and Production</div>
+            <p>incorporated on 07-JUN-2021 as a Private company limited by shares registered in Hong Kong. It's company registration number is: 3055455. The date of annual examination for this private company</p>
+            <div class="btn">LEARN MORE</div>
+          </div>
+          <div class="scroll">
+            <div class="mouse"></div>
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="pic-wrap">
+          <div class="pic bg1"></div>
+        </div>
+        <div class="text-wrap">
+          <div class="wrap col-xs-6 col-md-12">
+            <h4>ZONE OPTICS LIMITED視界光學有限公司3</h4>
+            <div class="title"> Leading Expert in Specialty Contact Lens Design and Production</div>
+            <p>incorporated on 07-JUN-2021 as a Private company limited by shares registered in Hong Kong. It's company registration number is: 3055455. The date of annual examination for this private company</p>
+            <div class="btn">LEARN MORE</div>
+          </div>
+          <div class="scroll">
+            <div class="mouse"></div>
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="history" id="history">
+      <div class="floatCt">
+        <div class="container col-12">
+          <div class="row col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <h5>Since</h5>
+            <h2 class="number" id="value1">1980</h2>
+          </div>
+          <div class="row col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <h5>Available in over</h5>
+            <h2 class="number" id="value2">100</h2>
+            <h5>Countries</h5>
+          </div>
+          <div class="row col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <h5>R & D Facilities in</h5>
+            <h2 class="number" id="value3">100</h2>
+            <h5>
+              Locations <br>Worldwide</h5>
+          </div>
+          <div class="line"></div>
+          <div class="row col-12">
+            <h5>Our History</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div class="container col-12">
+        <div class="row d-flex">
+          <div class="tabs">
+            <div class="ct_wrap" id="slideContainer">
+              <div class="tabsCt" id="ct1">
+                <h6>clear lab1</h6>
+                <h2>
+                   Clear 1-day <span>®</span></h2>
+                <p>clear 1-day® is the first biocompatible daily disposable lens with an innovative biocompatible AQUAGRIP™ technology and advanced aspheric design for true spherical aberration correction.</p><a class="btn" href="product.html">LEARN MORE</a>
+                <div class="pic"><img src="images/pd_sample1.png" alt="" srcset=""></div>
+              </div>
+              <div class="tabsCt" id="ct2">
+                <h6>Menicon2</h6>
+                <h2>
+                   Menicon Starter Kit <span></span></h2>
+                <p>A complete GP lens cleaning kit, but in a smaller size for convenience when travelling, or to help our new Menicon GP lens wearer to get their journey started.</p>
+                <div class="a btn" href="product.html">LEARN MORE</div>
+                <div class="pic"><img src="images/pd_sample2.png" alt="" srcset=""></div>
+              </div>
+              <div class="tabsCt" id="ct3">
+                <h6>Menicon3</h6>
+                <h2>
+                   Menicon Spray & Clean<span></span></h2>
+                <p>clear 1-day® is the first biocompatible daily disposable lens with an innovative biocompatible AQUAGRIP™ technology and advanced aspheric design for true spherical aberration correction.</p><a class="btn" href="product.html">LEARN MORE</a>
+                <div class="pic"><img src="images/pd_sample3.png" alt="" srcset=""></div>
+              </div>
+              <div class="tabsCt" id="ct4">
+                <h6>clear lab4</h6>
+                <h2>
+                   Clear 1-day <span>®</span></h2>
+                <p>clear 1-day® is the first biocompatible daily disposable lens with an innovative biocompatible AQUAGRIP™ technology and advanced aspheric design for true spherical aberration correction.</p><a class="btn" href="product.html">LEARN MORE</a>
+                <div class="pic"><img src="images/pd_sample1.png" alt="" srcset=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="info-chart">
+            <ul class="tabsList">
+              <li class="tabBtn tab1"><a href="#clearLab">clearLab</a></li>
+              <li class="tabBtn tab2"><a href="#Menicon">Menicon</a></li>
+            </ul>
+            <div class="ct_wrap">
+              <div class="tabsCt" id="clearLab">
+                <div class="layer-diamond">
+                  <div class="layer layer1" data-tab="1"><img src="images/01square.png" alt="" srcset=""></div><span id="sp1">#01	</span>
+                  <div class="layer layer2" data-tab="2"><img src="images/02square.png" alt="" srcset=""></div><span id="sp2">#02	</span>
+                  <div class="layer layer3" data-tab="3"><img src="images/03square.png" alt="" srcset=""></div><span id="sp3">#03	</span>
+                  <div class="layer layer4" data-tab="4"><img src="images/04square.png" alt="" srcset=""></div><span id="sp4">#04	</span>
+                </div>
+                <div class="arrow-wrap">
+                  <div class="round-wrap">
+                    <div class="round-arrow top"></div>
+                    <div class="round-arrow down"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabsCt" id="Menicon">
+                <div class="layer-diamond">
+                  <div class="layer layer1" data-tab="1"><img src="images/01square.png" alt="" srcset=""></div>
+                  <div class="layer layer2" data-tab="2"><img src="images/02square.png" alt="" srcset=""></div>
+                  <div class="layer layer3" data-tab="3"><img src="images/03square.png" alt="" srcset=""></div>
+                  <div class="layer layer4" data-tab="4"><img src="images/04square.png" alt="" srcset=""></div>
+                </div>
+                <div class="arrow-wrap">
+                  <div class="round-wrap">
+                    <div class="round-arrow top"></div>
+                    <div class="round-arrow down"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news" id="news">
+      <div class="p5js" id="particle1"></div>
+      <div class="container">
+        <div class="row col-12">
+          <div class="news-wrap col-xl-12 col-md-12 col-sm-12">
+            <div class="ct_wrap">
+              <ul class="tabsCt" id="n1">
+                <li>
+                  <div class="date">16 AUG 2021</div>
+                  <div class="txt">
+                    <h6 class="tip">Company News</h6>
+                    <h5 class="title">FDA Approves ZONE Optics 1 day Contact Lens for Childhood Myopia</h5>
+                    <p>Pioneering, Clinically Proven Approach to Myopia Management Gaining Global Momentum SAN RAMON, Calif., February 12, 2020—The Taiwan Food and Drug Administration has approved ZONE Optics’s...</p><a class="news more active" href="#"></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">16 AUG 2021</div>
+                  <div class="txt">
+                    <h6 class="tip">Company News</h6>
+                    <h5 class="title">FDA Approves ZONE Optics 1 day Contact Lens for Childhood Myopia</h5>
+                    <p>Pioneering, Clinically Proven Approach to Myopia Management Gaining Global Momentum SAN RAMON, Calif., February 12, 2020—The Taiwan Food and Drug Administration has approved ZONE Optics’s...</p><a class="news more" href="#"></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">16 AUG 2021</div>
+                  <div class="txt">
+                    <h6 class="tip">Company News</h6>
+                    <h5 class="title">FDA Approves ZONE Optics 1 day Contact Lens for Childhood Myopia</h5>
+                    <p>Pioneering, Clinically Proven Approach to Myopia Management Gaining Global Momentum SAN RAMON, Calif., February 12, 2020—The Taiwan Food and Drug Administration has approved ZONE Optics’s...</p><a class="news more" href="news.html"></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">16 AUG 2021</div>
+                  <div class="txt">
+                    <h6 class="tip">Company News</h6>
+                    <h5 class="title">FDA Approves ZONE Optics 1 day Contact Lens for Childhood Myopia</h5>
+                    <p>Pioneering, Clinically Proven Approach to Myopia Management Gaining Global Momentum SAN RAMON, Calif., February 12, 2020—The Taiwan Food and Drug Administration has approved ZONE Optics’s...</p><a class="news more" href="news.html"></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="row col-12">
+          <div class="blog-wrap">
+            <div class="ct_wrap">
+              <div class="cardsCt owl-carousel" id="bo1">
+                <div class="card">
+                  <div class="pic"><img src="images/blog-pic1.jpg" alt="" srcset=""></div>
+                  <div class="text">
+                    <h6>Pharetra, consequat dictum egestas mattis.</h6>
+                    <p class="date">16 Aug 2021</p>
+                    <p>Maecenas donec etiam tincidunt at. Vel sed lobortis cras ut sapien nec nisl. Massa quam aenean sapien, vulputate lectus purus proin. Tellus in vestibulum lectus et. Congue ut quam nullam suspendisse amet.</p>
+                  </div>
+                  <div class="btn-wrap">
+                    <div class="btn"></div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="pic"><img src="images/blog-pic2.jpg" alt="" srcset=""></div>
+                  <div class="text">
+                    <h6>Pharetra, consequat dictum egestas mattis.</h6>
+                    <p class="date">16 Aug 2021</p>
+                    <p>Maecenas donec etiam tincidunt at. Vel sed lobortis cras ut sapien nec nisl. Massa quam aenean sapien, vulputate lectus purus proin. Tellus in vestibulum lectus et. Congue ut quam nullam suspendisse amet.</p>
+                  </div>
+                  <div class="btn-wrap">
+                    <div class="btn"></div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="pic"><img src="images/blog-pic3.jpg" alt="" srcset=""></div>
+                  <div class="text">
+                    <h6>Pharetra, consequat dictum egestas mattis.</h6>
+                    <p class="date">16 Aug 2021</p>
+                    <p>Maecenas donec etiam tincidunt at. Vel sed lobortis cras ut sapien nec nisl. Massa quam aenean sapien, vulputate lectus purus proin. Tellus in vestibulum lectus et. Congue ut quam nullam suspendisse amet.</p>
+                  </div>
+                  <div class="btn-wrap">
+                    <div class="btn"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="unitsList">
+      <p>home</p>
+      <div class="unitBtn"><a class="point" href="#home"><span></span></a></div>
+      <div class="unitBtn"><a class="point" href="#history"><span></span></a></div>
+      <div class="unitBtn"><a class="point" href="#products"><span></span></a></div>
+      <div class="unitBtn"><a class="point" href="#news"><span></span></a></div>
+      <div class="unitBtn"><a class="point" href="#blog"><span></span></a></div>
+      <div class="track"></div>
+    </nav>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="contact-us col-xl-6 col-md-12">
+            <h3>Contact us</h3>
+            <p class="address col-md-6 col-sm-12 cols-xs-12">Block B7, Ground Floor, 5-7 Shatin Industrial Center, Yuen Shun Circuit, Sha Tin, Hong Kong</p>
+            <p class="tel-email col-md-6 col-sm-12 cols-xs-12"> <a href="mailto:info@zoneoptic.com">E• info@zoneoptic.com</a> <br>T• +852 2648 3338</p>
+            <p>&nbsp;</p>
+          </div>
+          <div class="Follow-us col-xl-6 col-md-12">
+            <h3>Follow us</h3>
+            <p class="social col-md-6 col-sm-12 cols-xs-12"> <a href="#">Facebook</a><br><a href="#">Instagram</a></p>
+            <p class="others col-md-6 col-sm-12 cols-xs-12"> <a href="#">SITEMAP</a><br><a href="#">TERM & CONDITIONS</a><br><a href="#">PRIVACY POLICY</a></p>
+            <div class="subscription col-12"> 
+              <label>update-info</label><br>
+              <input id="subscription" type="email" name="update-info" placeholder="ENTER EMAIL FOR UPDATES">
+              <div class="arrow"></div>
+            </div>
+          </div><a class="backToTop" href="#">BACK TO TOP</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap-4.5.3-dist/js/bootstrap.min.js"> </script>
+    <script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="js/all.js"> </script>
+  </body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+  
+  //- var tl = gsap.timeline({
+  //- 	scrollTrigger: {
+  //- 	trigger: ".products",
+  //- 	scrub: true,
+  //- 	pin: true,
+  //- 	toggleActions: 'play reverse play reverse'
+  //- 	start: "top 5%",
+  //- 	end: "+=400%",
+  //- 	pinSpacing: true,		
+  //- 	}
+  //- });
+  //- tl.to(".products #ct1", {autoAlpha: 100,duration: 3, delay: 3})
+  //- tl.to(".products #ct1", {autoAlpha: 0})
+  //- tl.to(".products #ct2", {autoAlpha: 100,duration: 3, delay: 3})
+  //- tl.to(".products #ct2", {autoAlpha: 0})
+  //- tl.to(".products #ct3", {autoAlpha: 100,duration: 3, delay: 3})
+  //- tl.to(".products #ct3", {autoAlpha: 0})
+  //- tl.to(".products #ct4", {autoAlpha: 100,duration: 3, delay: 3})
+  //- tl.to(".products #ct4", {autoAlpha: 0})
+  
+  
+  gsap.to('.products', 
+  	{
+  	scrollTrigger: {
+  	pin: '.products',
+  	start: "top",
+  	end: '+=4000s',
+  	pinSpacing: true,
+  	}
+  });
+  
+  gsap.to('#ct1', {
+  scrollTrigger: {
+  trigger: '#ct1',
+  toggleActions: 'play reverse play reverse',
+  start: '0s',
+  end: '+=1000s',
+  onEnter: layerMove1,
+  onLeaver: removeClass,
+  onEnterBack: layerMove1,
+  onLeaverBack: removeClass,	
+  },
+  opacity: 1,
+  });
+  
+  gsap.to('#ct2', {
+  scrollTrigger: {
+  trigger: '#ct2',
+  toggleActions: 'play reverse play reverse',
+  start: '1000s',
+  end: '+=1000s',
+  onEnter: layerMove2,
+  onLeaver: removeClass,
+  onEnterBack: layerMove2,
+  onLeaverBack: removeClass,	
+  },
+  opacity: 1,
+  });
+  
+  gsap.to('#ct3', {
+  scrollTrigger: {
+  trigger: '#ct3',
+  toggleActions: 'play reverse play reverse',
+  start: '2000s',
+  end: '+=1000s',
+  onEnter: layerMove3,
+  onLeaver: removeClass,	
+  onEnterBack: layerMove3,
+  onLeaverBack: removeClass,	
+  },
+  opacity: 1,
+  });
+  gsap.to('#ct4', {
+  scrollTrigger: {
+  trigger: '#ct4',
+  toggleActions: 'play reverse play reverse',
+  start: '3000s',
+  end: '+=1000s',
+  onEnter: layerMove4,
+  onLeaver: removeClass,
+  onEnterBack: layerMove4,
+  onLeaverBack: removeClass,		
+  },
+  opacity: 1,
+  });
+  
+  
+  //--首頁數字特效
+  function animateValue(obj, start, end, duration) {
+  	var startTimestamp = null;
+  	var step = function(timestamp){
+  		if (!startTimestamp) startTimestamp = timestamp;
+  		var progress = Math.min((timestamp - startTimestamp) / duration, 1);
+  		obj.innerHTML = Math.floor(progress * (end - start) + start);
+  		if (progress < 1) {
+  		window.requestAnimationFrame(step);
+  		}
+  	}		
+  window.requestAnimationFrame(step);
+  }
+  
+  var obj1 = document.getElementById("value1");
+  animateValue(obj1, 0, 1980, 1500);
+  
+  var obj2 = document.getElementById("value2");
+  animateValue(obj2, 0, 100, 1900);
+  
+  var obj3 = document.getElementById("value3");
+  animateValue(obj3, 0, 100, 2500);
+  
+  
+  
+  
+  
+  //--p5.js
+  // this class describes the properties of a single particle.
+  class Particle {
+  // setting the co-ordinates, radius and the
+  // speed of a particle in both the co-ordinates axes.
+  constructor(){
+  this.x = random(0,width);
+  this.y = random(0,height);
+  this.r = random(1,8);
+  this.xSpeed = random(-2,2);
+  this.ySpeed = random(-1,1.5);
+  }
+  
+  // creation of a particle.
+  createParticle() {
+  noStroke();
+  fill('rgba(255,255,255,1)');
+  circle(this.x,this.y,this.r);
+  }
+  
+  // setting the particle in motion.
+  moveParticle() {
+  if(this.x < 0 || this.x > width)
+  this.xSpeed*=-1;
+  if(this.y < 0 || this.y > height)
+  this.ySpeed*=-1;
+  this.x+=this.xSpeed;
+  this.y+=this.ySpeed;
+  }
+  
+  // this function creates the connections(lines)
+  // between particles which are less than a certain distance apart
+  joinParticles(particles) {
+  particles.forEach(element =>{
+  let dis = dist(this.x,this.y,element.x,element.y);
+  if(dis<85) {
+  	stroke('rgba(255,255,255,0.4)');
+  	line(this.x,this.y,element.x,element.y);
+  }
+  });
+  }
+  }
+  
+  // an array to add multiple particles
+  let particles = [];
+  
+  function setup(e) {
+  	var canvas = createCanvas(720, 400);
+  	for(let i = 0;i<width/10;i++){
+  	particles.push(new Particle());
+  	}
+  	canvas.parent('particle1');
+  }
+  
+  function draw() {
+  background(229,229,229,0);
+  clear();
+  for(let i = 0;i<particles.length;i++) {
+  particles[i].createParticle();
+  particles[i].moveParticle();
+  particles[i].joinParticles(particles.slice(i));
+  }
+  }
+</script>
